@@ -1,0 +1,40 @@
+#mainHeader{
+    background-color: rgb(215,215,215/0.5);
+    border: 0.3px solid #929292;    
+    backdrop-filter: blur(10px);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: sticky;
+    top: -5%;
+    width:100%;
+
+    .ulGlobalNav1{
+        text-align: center;
+        margin: 0px;
+    }
+
+    .ulGlobalNav2{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom:0px;
+    }
+
+    .liGlobalNav{
+        display:inline-block;
+        margin-left:10px;
+        margin-right:10px;
+    }
+}
+
+#bodyMargin{
+    margin: 0px;
+}
+
+a{
+    text-decoration-line: none;
+    color:#000000;
+}
+
+#body{
+    padding-top:4%;
+}
