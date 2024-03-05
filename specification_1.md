@@ -1,55 +1,55 @@
-# BE &rarr; FE ¸í¼¼
+# BE &rarr; FE ëª…ì„¸
 > ```json
 > {
 >     "problems": [
->        {//°´°ü½Ä
->             "title": "¹®Á¦ÀÇ Áö¹®ÀÌ ¿É´Ï´Ù. type: string",
->             "type": "¹®Á¦ÀÇ Å¸ÀÔÀÌ ¿É´Ï´Ù. type: string",
+>        {//ê°ê´€ì‹
+>             "title": "ë¬¸ì œì˜ ì§€ë¬¸ì´ ì˜µë‹ˆë‹¤. type: string",
+>             "type": "ë¬¸ì œì˜ íƒ€ìž…ì´ ì˜µë‹ˆë‹¤. type: string",
 >             "selections": [
 >                 {
->                     "s1": "º¸±â 1¹ø, type: string",
->                     "s2": "º¸±â 2¹ø, type: string",
->                     "s3": "º¸±â 3¹ø, type: string",
->                     "s4": "º¸±â 4¹ø, type: string",
->                     "s5": "º¸±â 5¹ø, type: string",
+>                     "s1": "ë³´ê¸° 1ë²ˆ, type: string",
+>                     "s2": "ë³´ê¸° 2ë²ˆ, type: string",
+>                     "s3": "ë³´ê¸° 3ë²ˆ, type: string",
+>                     "s4": "ë³´ê¸° 4ë²ˆ, type: string",
+>                     "s5": "ë³´ê¸° 5ë²ˆ, type: string",
 >                 }
 >             ],
->             "answer": "¹®Á¦ÀÇ ´äÀÌ ¿É´Ï´Ù. type: int"
+>             "answer": "ë¬¸ì œì˜ ë‹µì´ ì˜µë‹ˆë‹¤. type: int"
 >        },
->        {//ÁÖ°ü½Ä
->             "title": "¹®Á¦ÀÇ Áö¹®ÀÌ ¿É´Ï´Ù. type: string",
->             "type": "¹®Á¦ÀÇ Å¸ÀÔÀÌ ¿É´Ï´Ù. type: string",
->             "answer": "¹®Á¦ÀÇ ´äÀÌ ¿É´Ï´Ù. type: int"
+>        {//ì£¼ê´€ì‹
+>             "title": "ë¬¸ì œì˜ ì§€ë¬¸ì´ ì˜µë‹ˆë‹¤. type: string",
+>             "type": "ë¬¸ì œì˜ íƒ€ìž…ì´ ì˜µë‹ˆë‹¤. type: string",
+>             "answer": "ë¬¸ì œì˜ ë‹µì´ ì˜µë‹ˆë‹¤. type: int"
 >        },
 >        {//OX
->             "title": "¹®Á¦ÀÇ Áö¹®ÀÌ ¿É´Ï´Ù. type: string",
->             "type": "¹®Á¦ÀÇ Å¸ÀÔÀÌ ¿É´Ï´Ù. type: string",
->             "answer": "¹®Á¦ÀÇ ´äÀÌ ¿É´Ï´Ù. type: boolean"
+>             "title": "ë¬¸ì œì˜ ì§€ë¬¸ì´ ì˜µë‹ˆë‹¤. type: string",
+>             "type": "ë¬¸ì œì˜ íƒ€ìž…ì´ ì˜µë‹ˆë‹¤. type: string",
+>             "answer": "ë¬¸ì œì˜ ë‹µì´ ì˜µë‹ˆë‹¤. type: boolean"
 >        }
 >     ]
 > }
 > ```
-> * °´°ü½ÄÀº 5Áö¼±´ÙÀÔ´Ï´Ù.
-> * °´°ü½Ä ¹®Á¦ÀÇ typeÀº choiceQÀÔ´Ï´Ù.
-> * ÁÖ°ü½Ä ¹®Á¦ÀÇ typeÀº subjectiveQÀÔ´Ï´Ù.
-> * OX ¹®Á¦ÀÇ typeÀº doubleQÀÔ´Ï´Ù.
-> * `answer`´Â ¾ðÁ¦³ª ÇÏ³ªÀÔ´Ï´Ù.
+> * ê°ê´€ì‹ì€ 5ì§€ì„ ë‹¤ìž…ë‹ˆë‹¤.
+> * ê°ê´€ì‹ ë¬¸ì œì˜ typeì€ choiceQìž…ë‹ˆë‹¤.
+> * ì£¼ê´€ì‹ ë¬¸ì œì˜ typeì€ subjectiveQìž…ë‹ˆë‹¤.
+> * OX ë¬¸ì œì˜ typeì€ doubleQìž…ë‹ˆë‹¤.
+> * `answer`ëŠ” ì–¸ì œë‚˜ í•˜ë‚˜ìž…ë‹ˆë‹¤.
 
-# FE &rarr; BE ¸í¼¼
+# FE &rarr; BE ëª…ì„¸
 > ```json
 > {
 >     "request":[
 >         {
->             "problemNum": "ÃÑ ¹®Á¦ÀÇ °¹¼öÀÔ´Ï´Ù. type: int",
->             "choiceQ": "¹®Á¦ÀÇ Å¸ÀÔÀÌ ¿É´Ï´Ù. type: boolean",
->             "subjectiveQ": "¹®Á¦ÀÇ Å¸ÀÔÀÌ ¿É´Ï´Ù. type: boolean",
->             "doubleQ": "¹®Á¦ÀÇ Å¸ÀÔÀÌ ¿É´Ï´Ù. type: boolean",
->             "difficulty": "¹®Á¦ÀÇ ³­ÀÌµµ°¡ ¿É´Ï´Ù. type: string",
->             //"image": "¹®Á¦ ÀÌ¹ÌÁö Àü¼Û, type: image"
+>             "problemNum": "ì´ ë¬¸ì œì˜ ê°¯ìˆ˜ìž…ë‹ˆë‹¤. type: int",
+>             "choiceQ": "ë¬¸ì œì˜ íƒ€ìž…ì´ ì˜µë‹ˆë‹¤. type: boolean",
+>             "subjectiveQ": "ë¬¸ì œì˜ íƒ€ìž…ì´ ì˜µë‹ˆë‹¤. type: boolean",
+>             "doubleQ": "ë¬¸ì œì˜ íƒ€ìž…ì´ ì˜µë‹ˆë‹¤. type: boolean",
+>             "difficulty": "ë¬¸ì œì˜ ë‚œì´ë„ê°€ ì˜µë‹ˆë‹¤. type: string",
+>             //"image": "ë¬¸ì œ ì´ë¯¸ì§€ ì „ì†¡, type: image"
 >         }
 >     ]
 > }
 > ```
 > 
-> * ÃÑ ¹®Á¦ÀÇ ¼ö´Â 30¹®Á¦ Á¦ÇÑÀÔ´Ï´Ù.
+> * ì´ ë¬¸ì œì˜ ìˆ˜ëŠ” 30ë¬¸ì œ ì œí•œìž…ë‹ˆë‹¤.
 > * `difficulty`: easy, normal, hard
