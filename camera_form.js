@@ -1,4 +1,5 @@
-
+let arrayLength = 0;
+let fileArray = new Array(10);
 const fileHandler = {
     init(){
         const fileInput = document.querySelector('.image_upload');
@@ -30,7 +31,8 @@ const fileHandler = {
             document.querySelector('.image_upload').files = dataTranster.files;
                 removeTarget.remove();
             })
-
+            fileArray[fileArray.length] = 0;
+            console.log(fileArray);
             
         }
 }
@@ -41,6 +43,9 @@ function loadImage(image){
     const imageUpload = document.querySelector(".image_upload");
     
     let file = imageUpload.files[0];
+    fileArray[arrayLength] = file;
+    console.log(fileArray);
+    arrayLength++;
     let imageFile = document.createElement("img");
     imageFile.setAttribute("class","imageFile");
     imageFile.src = URL.createObjectURL(file);
