@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>main</title>
-        <link rel="stylesheet" href="camera_form.css" />
+        <link rel="stylesheet" href="createProblem.css" />
         <meta charset="UTF-8">
-        <script src="camera_form.js"></script>
+        <script src="createProblem.js"></script>
     </head>
     <body id="style_Body">
         <header id="globalHeader">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="globalNav_LowerList">
-                    <div class="globalNav_LowerList_title"><p class="LowerList_title_text">이미지 업로드</p></div>
+                    <div class="globalNav_LowerList_title"><p class="LowerList_title_text">문제 구성</p></div>
                     <div class="globalNav_LowerItem">
                         <div class="globalNav_Lowercontents"><a class="content_a" href="">설정1</a></div>
                         <div class="globalNav_Lowercontents"><a class="content_a" href="">설정2</a></div>
@@ -30,9 +30,7 @@
             </nav>
         </header>
         <div id="body">
-            <input type="file" id="uploadInput" accept="image/*" multiple>
-            <button onclick="deletePreview()">미리보기 삭제</button>
-            <div id="previewContainer"></div>
+            <div id="output"></div>
         </div>
 
         <footer id="footer_main">
